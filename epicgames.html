@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Epic games log in page</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+		*
+		{
+			margin: 0;
+			padding: 0;
+
+		}
+		body
+		{
+			background-color: black;
+		}
+		#container-login
+		{
+			text-align: center;
+			border: none;
+			box-shadow: 0 0px 12px 0 rgba(0, 0, 0, 0.2);
+			width: 400px;
+			height: 620px;
+			margin: auto;
+	        top: 20%;
+			position: relative;
+			margin-top: 60px;
+			background-color:#15181c;
+			border-radius: 5px;
+			color: white;
+
+		}
+
+		#title
+		{
+			font-family: 'Antonio', sans-serif;
+			font-size: 15px;
+		}
+		#picture
+		{
+			padding-top: 38px;
+			margin: 8px;
+		}
+		#username
+		{
+			width: 300px;
+			height: 55px;
+			margin: 20px;
+			padding-left: 8px;
+			background-color:#15181c ;
+			border: 1px solid #757373 ;
+			border-radius: 4px;
+			color: white;
+		}
+
+		#password
+		{
+			width: 300px;
+			height: 55px;
+			margin: 5px;
+			padding-left: 8px;
+			background-color:#15181c ;
+			border: 1px solid #757373 ;
+			border-radius: 4px;
+			color: white;
+		}
+		#forgot-password
+		{
+			margin: 20px;
+			color: #c7ccd4;
+			cursor: pointer;
+			font-size: 17px;
+		}
+		#forgot-password a
+		{
+			text-decoration: underline;
+			margin-left: 37px;
+			color: white;
+			font-size: 16px;
+		}
+		#forgot-password a:hover
+		{
+			text-decoration: none;
+
+		}
+		#log
+		{
+			width: 300px;
+			height: 60px;
+			background-color: #267bd1;
+			border: none;
+			color: white;
+			border-radius: 4px;
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: lighter;
+			margin: 20px;
+			cursor: pointer;
+			font-size: 12px;
+		}
+		#log
+{
+  box-shadow: 0 0 1px #ccc;
+  transition: box-shadow 0.3s ease;
+}
+#log:hover, #log:focus, #log:active 
+{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+  #privacy a
+  {
+  	color: white;
+  	text-decoration: underline;
+  	font-size: 15px;
+  }
+  #privacy a:hover
+  {
+  	text-decoration: none;
+  }
+  #privacy
+  {
+  	margin: 15px;
+  }
+  #footer
+  {
+  	margin: 25px;
+  	font-size: 15px;
+  }
+
+  #footer p
+  {
+  	color: #c7ccd4;
+  }
+  #footer p a
+  {
+  	color: white;
+  	text-decoration: underline;
+
+  }
+  #footer p a:hover
+  {
+  	text-decoration: none;
+  }
+  	*:focus{
+		outline: none;
+	}
+	</style>
+</head>
+<body>
+<div id="container-login">
+		<form>
+			<div id="picture">
+				<img src="logo.png">
+			</div>
+			<div id="title">
+				<p>SIGN IN WITH AN EPIC GAMES ACCOUNT</p>
+			</div>
+			<div class="input">
+				<input type="email" required id="username"
+				placeholder="Email Address" autocomplete="off">
+				<input type="password" required id="password" placeholder="Password" autocomplete="off">
+			</div>
+			<div id="forgot-password">
+				<input type="checkbox">
+				<label>Remember me <a href="#">Forgot Your Password</a></label>
+			</div>
+			<div>
+				<button id="log">LOG IN NOW</button>
+			</div>
+			<div id="privacy">
+				<a href="#">Privacy Policy</a>
+			</div>
+			<div id="footer">
+				<p>Don't have an Epic Games account? <a href="#">Sign Up</a><br><br>Back to <a href="#">all sign up options</a></p>
+			</div>
+		</form>
+</div>
+</body>
+</html>

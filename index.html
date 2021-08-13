@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style media="screen">
+      body{
+        background-color: white;
+      }
+
+      #entire{
+        height: 750px;
+        width: 450px;
+        text-align: center;
+        border: 1px solid black;
+        margin-left: 700px;
+        margin-top: 70px;
+        background-color:#2C2C2C;
+        box-shadow: 10px 15px 10px  rgba(0, 0, 0, 0.7);
+        border: none;
+      }
+      #entire p{
+        color: white;
+        font-size: 15px;
+        font-family: sans-serif;
+      }
+      #logo p{
+        margin-top: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      #logo img
+      {
+        background-color: white;
+        
+      }
+      #one
+      {
+        height: 68px;
+        width: 320px;
+        background-color: #5E5C5C;
+        margin: 8px;
+        border: none;
+        border-radius: 5px;
+        border: none;
+      }
+      #one img{
+        float: left;
+        color: white;
+      }
+      #one p{
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-top: 25px;
+      }
+      #two 
+      {
+        height: 68px;
+        width: 320px;
+        background-color: #5E5C5C;
+        border-radius: 5px;
+        border: none;
+
+      }
+      #two i 
+      {
+        float: left;
+      }
+      #two p{
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-top: 20px;
+      }
+      .fa-facebook {
+
+         background: #3B5998;
+         color: white;
+      }
+      .fa {
+        /*padding: 20px;*/
+        font-size: 45px;
+        width: 45px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        height: 50px;
+      }
+
+      #three
+      {
+        height: 68px;
+        width: 320px;
+        background-color: #5E5C5C;
+        margin: 8px;
+        border-radius: 5px;
+        border: none;
+      }
+      #three p{
+          font-weight: bold;
+        font-family: sans-serif;
+        margin-top: 20px;
+      }
+      .fa-instagram {
+        background: #b52688;
+        color: white;
+      }
+      #three i
+      {
+        float: left;
+        border-radius: 5px;
+
+      }
+      #four
+      {
+        height: 68px;
+        width: 320px;
+        background-color: #5E5C5C;
+        border-radius: 5px;
+        border: none;
+        
+      }
+      #four p{
+          font-weight: bold;
+        font-family: sans-serif;
+        margin-top: 20px;
+      }
+      .fa-steam
+      {
+        background: #107594;
+       color: white;
+       /*margin-top: 8px;*/
+      }
+      #four i 
+      {
+        float: left;
+      }
+      #five
+      {
+        height: 68px;
+        width: 320px;
+        background-color: #5E5C5C;
+        margin: 8px;
+        border-radius: 5px;
+        border: none;
+      }
+      #five img
+      {
+        float: left;
+        height: 50px;
+        width: 50px;
+
+      }
+      #five p{
+          font-weight: bold;
+        font-family: sans-serif;
+      }
+      #six
+      {
+        height: 68px;
+        width: 320px;
+        background-color: #5E5C5C;
+        margin: 1px;
+        border-radius: 5px;
+        border: none;
+      }
+      #six img{
+        float: left;
+        height: 50px;
+        width: 120px;
+        margin-left: -35px;
+      }
+      #six p{
+          font-weight: bold;
+        font-family: sans-serif;
+        margin-right: 25px;
+        text-align: center;
+      }
+      #logo img
+      {
+        margin-top: 40px;
+      }
+      #footer p{
+          font-family: sans-serif;
+      }
+      #footer a{
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: underline;
+        color: white;
+      }
+
+      #footer a:hover
+      {
+        text-decoration: none;
+      }
+      #one 
+      {
+        box-shadow: 0 0 1px #ccc;
+        transition: box-shadow 0.3s ease;
+      }
+      #one:hover, #one:focus, #one:active 
+      {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+          cursor: pointer;
+      }
+
+      #two 
+      {
+        box-shadow: 0 0 1px #ccc;
+        transition: box-shadow 0.3s ease;
+      }
+      #two:hover, #two:focus, #two:active 
+      {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+          cursor: pointer;
+      }
+      #three 
+      {
+        box-shadow: 0 0 1px #ccc;
+        transition: box-shadow 0.3s ease;
+      }
+      #three:hover, #three:focus, #three:active 
+      {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+          cursor: pointer;
+      }
+      #four 
+      {
+        box-shadow: 0 0 1px #ccc;
+        transition: box-shadow 0.3s ease;
+      }
+      #four:hover, #four:focus, #four:active 
+      {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+          cursor: pointer;
+      }
+      #five 
+      {
+        box-shadow: 0 0 1px #ccc;
+        transition: box-shadow 0.3s ease;
+      }
+      #five:hover, #five:focus, #five:active 
+      {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+          cursor: pointer;
+      }
+      #six 
+      {
+        box-shadow: 0 0 1px #ccc;
+        transition: box-shadow 0.3s ease;
+      }
+      #six:hover, #six:focus, #six:active 
+      {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+          cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="entire">
+      <form class="">
+        <div id="logo">
+          <img src="https://img.icons8.com/wired/64/000000/epic-games.png">
+          <p>CHOOSE HOW TO SIGN IN TO YOUR EPIC ACCOUNT</p>
+        </div>
+        <div class="">
+
+              <a href="epicgames.html" target="blank">
+                <button id="one" type="button">
+                <img src="https://img.icons8.com/wired/64/000000/epic-games.png">
+                <p>SIGN IN WITH EPIC GAMES</p>
+              </button>
+              </a>
+              
+              <a href="fb.html" target="blank">
+                <button id="two" type="button">
+                <i class="fa fa-facebook"></i>
+                <p>SIGN IN WITH FACEBOOK</p>
+              </button>
+              </a>
+                
+              <a href="insta-login.html" target="blank">
+                <button id="three" type="button">
+               <i class="fa fa-instagram"></i>
+               <p>SIGN IN WITH INSTAGRAM</p>
+             </button>
+              </a>
+             
+            <a href="steam-login.html" target="blank">
+              <button id="four" type="button">
+               <i class="fa fa-steam" style="font-size:36px; color: black;"></i>
+               <p>SIGN IN WITH STEAM</p>
+            </button>
+            </a>
+            
+
+            <a href="xbox-login.html" target="blank">
+              <button id="five" type="button">
+              <img src="xbox.jpg">
+              <p>SIGN IN WITH XBOX LIVE</p>
+             </button>
+            </a>
+             
+             <a href="rockstar.html" target="blank">
+              <button id="six" type="button">
+              <img src="rock-logo.png">
+              <p>SIGN IN WITH ROCKSTAR</p>
+             </button>
+            </a>
+
+        </div>
+        <div id="footer">
+          <p>Don't have an Epic Games account? <a href="#">Sign up</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

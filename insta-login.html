@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Instagram Login</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+
+	@import url('http://fonts.cdnfonts.com/css/billabong');
+
+	.container{
+		height: 590px;
+		width: 300px;
+		border: 1px solid #E7DFDF;
+		text-align: center;
+		position: relative;
+		left: 530px;
+		top: 25px;
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+		background-color: white;
+	}
+	#insta{
+		font-family: Billabong;
+		font-size: 50px;
+		margin-top: 120px;
+		color: black;
+	}
+	.write{
+		margin: 5px;
+		width: 260px;
+		height: 30px;
+		padding-left: 10px;
+		border: 1px solid #E7DFDF;
+		background-color: #F0F0F0;
+		color: black;
+		border-radius: 3px;
+	}
+	#login{
+		margin: 10px;
+		width: 260px;
+		height: 28px;
+		background-color: #2480F2;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		font-weight: bold;
+		color: white;
+	}
+	#or{
+		font-family: sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		margin: 10px;
+	}
+	#fb{
+		margin: 30px;
+		font-family: sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+		color: black;
+	}
+	#fb a{
+		text-decoration: none;
+	}
+	#forgot{
+		font-family: sans-serif;
+		font-size: 13px;
+	}
+	#forgot a{
+		text-decoration: none;
+		color: black;
+	}
+	#login 
+	{
+  		box-shadow: 0 0 1px #ccc;
+ 		transition: box-shadow 0.3s ease;
+	}
+	#login:hover, #login:focus, #login:active 
+	{
+  		box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  		cursor: pointer;
+	}
+		*:focus{
+		outline: none;
+	}
+	.fa {
+		margin-right: 5px;
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+body{
+	background-color: #F7F4F4;
+}
+
+</style>
+<body>
+<div class="container">
+	<form>
+		<div class="title">
+			<p id="insta">Instagram</p>
+			<input class="write" type="Email" type="tel" type="text" placeholder="Phone number, username, or email" required>
+			<input class="write" type="Password" placeholder="Password" required>
+			<button id="login">Log In</button>
+			<p id="or">OR</p>
+			<div id="fb">
+				<a href="fb.html"><p><a href="fb.html" class="fa fa-facebook"></a>Log in with Facebook</p></a>
+			</div>
+			<div id="forgot">
+				<a href="#">Forgot password?</a>
+			</div>
+
+		</div>
+
+	</form>
+</div>
+</body>
+</html>

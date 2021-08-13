@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<style type="text/css">
+	    body
+	    {
+	    	background-color: green;
+	    }
+		#page
+		{
+			border: 1px solid black;
+			height: 330px;
+			width: 400px;
+			margin-left: 700px;
+			margin-top: 25px;
+			background-color: white;
+			border: none;
+		}
+		#one
+		{
+			margin-left: 840px;
+			margin-top: 230px;
+
+		}
+		#one p
+		{
+			color: white;
+			font-size: 30px;
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+		#two img
+		{
+			height: 40px;
+			width: 170px;
+			margin-left: 15px;
+			/*padding: 8px;*/
+			margin-top: 15px;
+		}
+		#two p
+		{
+			margin-left: 30px;
+			font-size: 25px;
+			font-weight: bold;
+			font-family: sans-serif;
+
+		}
+		#username
+		{
+			width: 335px;
+			height: 30px;
+			margin-left: 28px;
+			margin-top: -15px;
+			border: none;
+			border-bottom: 1px solid black;
+			outline: none;
+			font-size: 16px;
+		}
+		#account
+		{
+			margin-left: 28px;
+			font-size: 16px;
+
+
+		}
+
+		#account p
+		{
+			/*margin-top: 20px;*/
+		}
+		#account a
+		{
+			text-decoration: none;
+			color: #3297d1;
+		}
+		#account a:hover
+		{
+			text-decoration: underline;
+			color:#bab645;
+		}
+		#next 
+      {
+        box-shadow: 0 0 1px #ccc;
+        transition: box-shadow 0.3s ease;
+      }
+      #next:hover, #next:focus, #next:active 
+      {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+          cursor: pointer;
+      }
+      #next
+      {
+      	width: 100px;
+      	height: 30px;
+      	color: white;
+      	background-color:#1E82DF ;
+      	border: none;
+      	margin-left: 255px;
+      	margin-top: 35px;
+      }
+      #sign
+      {
+      	border: 1px solid black;
+      	width: 400px;
+      	height: 50px;
+      	background-color: white;
+      	border: none;
+      	margin-top:30px ;
+      	margin-left:700px ;
+      	cursor: pointer;
+      }
+      #sign i
+      {
+      	float: left;
+      	margin-left: 15px;
+      	margin-top: 10px;
+      }
+      #copy p
+      {
+      	font-size: 20px;
+      	margin-top: -7x;
+      	float: left;
+      	margin: 15px;
+      	margin-left: 20px;
+      }
+		
+	</style>
+</head>
+<body>
+<div id="entire">
+	<div id="one">
+		<p><i class="fab fa-xbox fa-spin" style="font-size:30px;color: white;background-color: green;"></i>  XBOX</p>
+	</div>
+	<div id="page">
+		<form>
+			<div id="two">
+				<img src="microsoft-2.jpg"> 
+				<p>Sign in</p>
+			</div>
+			<div >
+				<input type="text" placeholder="Email,phone or skype" id="username" autocomplete="off" required>
+			</div>
+			<div id="account"> 
+				<p>No account?<a href="#">  Create one!</a></p>
+			</div>
+            <button id="next">Next</button>
+		</form>
+	</div>
+
+</div>
+<div id="copy">
+	<form>
+		<button id="sign">
+			<i class="fas fa-key" style="font-size:30px"></i>
+		<p>Sign-in options</p>
+	</button>
+	</form>
+</div>
+</body>
+</html>

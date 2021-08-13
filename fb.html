@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Facebook log in page</title>
+	<style type="text/css">
+		*{
+			
+			/*color:#E2D4D4 ;*/
+			margin: 0;
+			padding: 0;
+
+		}
+		.title h1
+		{
+			color: #1E82DF;
+			font-family: helvetica;
+			/*font-weight: bold;*/
+
+
+		}
+
+		.title h2
+		{
+			font-family: sans-serif;
+			font-weight: 50;
+		}
+
+		.page
+		{
+		 float: right;
+	    /* margin-right: 140px;*/
+		 height: 320px;
+		 width: 380px;
+		 border: 1px solid black;
+		 border-radius: 8px;
+		 background-color: white;
+		 margin-right: 180px;
+		/* margin-bottom: 180px;*/
+		 text-align: center;
+		 box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+		 border: 1px solid #E7DFDF;
+		 position: relative;
+		 right: 30px;
+		 bottom: 180px;
+		 padding: 5px;
+
+         
+		}
+		.title
+		{
+			margin-left: 220px;
+			padding-top: 155px;
+
+
+		}
+
+
+
+   .input
+   {
+   	padding: 5px;
+   	text-align: center;
+
+   }
+   .footer
+   {
+   margin-top: 250px;
+   }
+   *:focus
+   {
+   	outline: none;
+   }
+
+   #username
+   {
+   	width: 92%;
+   	height: 40px;
+    border-radius: 4px;
+    margin: 10px;
+   border: 1px solid #E7DFDF;
+   padding-left: 10px;
+   font-size: 15px;
+   padding: 5px;
+
+  
+   }
+   #password
+   {
+   	width: 92%;
+   	height: 40px;
+   	border-radius: 4px;
+   	border: 1px solid #E7DFDF;
+   	padding-left: 10px;
+   	 font-size: 15px;
+   	 padding: 5px;
+   }
+  #login
+  {
+  	width: 92%;
+  	margin: 12px;
+  	height: 45px;
+  	border: none;
+  	cursor: pointer;
+  	color: white;
+  	background-color: #1E82DF;
+  	border-radius: 6px;
+  	font-size: 17px;
+  	font-weight: bold;
+  }
+
+  input[type=submit]:hover
+  {
+  	color:#D4DFE8 ;
+  	transition: color 1s;
+  }
+  #create 
+  {
+    width:230px ;
+    background-color:#6BC739 ;
+    font-size: 15px;
+    margin: 35px;
+    height: 45px;
+    outline:none ;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-weight: bold;
+
+
+  }
+
+  .create input[type=submit]:hover
+  {
+    color: #CCEEB8;
+  }
+  .forgot-password a
+  {
+  	text-decoration: none;
+  	font-size: 15px;
+  	color: #577DDC;
+  	/*font-weight: bold;*/
+
+  }
+
+  .forgot-password a:hover
+  {
+  	color: #B5C6E0;
+  	transition: color 1s;
+  }
+ body
+ {
+ 	background-color: #E0EDF4;
+ }
+
+ .footer a 
+ {
+ 	text-decoration: none;
+ 	margin-left: 400px;
+ 	font-weight: bold;
+ 	color: black;
+    
+
+ }
+
+
+
+
+#login
+{
+  box-shadow: 0 0 1px #ccc;
+  transition: box-shadow 0.3s ease;
+}
+#login:hover, #login:focus, #login:active 
+{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+
+#create
+{
+  box-shadow: 0 0 1px #ccc;
+  transition: box-shadow 0.3s ease;
+}
+#create:hover, #create:focus, #create:active 
+{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+<div class="container-login">
+	<div class="title">
+		<h1 style="font-size: 60px;">facebook</h1>	
+		<h2 style=" font-size: 25px;">Helps to keep in touch <br> communicate with your accquaintances<br>on Facebook</h2>
+	</div>
+		<div class="page">
+			<form>
+				<div class="input">
+					<input type="email" type="tel"
+					placeholder="Email or phone number:" required id="username" autocomplete="off">
+					<input type="password" placeholder="Password" required id="password" autocomplete="off">
+					   <div>
+			           <button id="login">Log in</button>
+		           </div>
+					<div class="forgot-password">
+						<a href="#">Forgot password?</a>
+					</div>
+
+					
+					<div >
+						<button id="create">Create new account</button>
+					</div>
+					<p><a href="#">Create a page</a> for any famous person,band or business</p>
+				</div>
+
+			</form>
+		</div>
+			<div class="footer">
+				
+			</div>
+		
+	
+</div>
+</body>
+</html>

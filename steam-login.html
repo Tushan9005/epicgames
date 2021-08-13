@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Steam</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body
+		{
+			background-image: url(cartoon.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100vh;
+			
+			font-family: sans-serif;
+			background-color: rgba(86, 86, 86, 0.3);
+			backdrop-filter: blur(2px);
+		}
+		.menu-bar
+		{
+			background-color:  black;
+			text-align: center;
+			/*backdrop-filter: blur(10px);*/
+			border: none;
+
+		}
+		.menu-bar ul
+		{
+			display: inline-flex;
+			list-style: none;
+			color: #bec4cf;
+
+		}
+		.menu-bar ul li 
+		{
+			width: 125px;
+			margin: 30px;
+			padding: 20px;
+			height: 60px;
+			z-index: 10;
+
+
+		}
+		.menu-bar ul li a
+		{
+			text-decoration: none;
+			color: #bec4cf;
+			font-size: 15px;
+
+
+		}
+		.menu-bar ul li a:hover
+		{
+			color:white ;
+			
+		}
+		.sub-menu-1
+		{
+			display: none;
+		}
+		.menu-bar ul li:hover .sub-menu-1
+		{
+			display: block;
+			position: absolute;
+			background: black;
+
+		}
+		.menu-bar ul li:hover .sub-menu-1 ul
+		{
+			display: block;
+			
+		}
+		.menu-bar ul li:hover .sub-menu-1 ul li
+		{
+			/*width: 150px;
+			padding: 10px;*/
+			/*border-bottom: 1px dotted #FFF;*/
+			background: transparent;
+			text-align: left;
+		}
+		.sub-menu-1
+		{
+			width: 180px;
+			
+			padding: 0px;
+
+		}
+		.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+		{
+			border-bottom: none;
+		}
+		.sub-menu-1 ul li 
+		{
+			padding: 0;
+			margin: 20px;
+			padding: 5px;
+			height: 18px;
+			width: 195px;
+		}
+		 i
+		{
+			height: 60px;
+			width: 60px;
+			border-radius: 30px;
+			/*float: left;*/
+		}
+		.menu-bar i p
+		{
+			color: #FFF;
+			font-size: 20px;
+		}
+
+		#form{
+			margin-top: 160px;
+			margin-left: 600px;
+			background-color: rgba(86, 86, 86, 0.3);
+			backdrop-filter: blur(10px);
+			width: 400px;
+			height: 400px;
+			box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+
+		}
+		#title{
+			font-size: 50px;
+			font-weight: 400px;
+			color: white;
+			margin-left:100px ;
+			/*margin: 40px;*/
+
+
+		}
+		#title p
+		{
+			padding-top: 20px;
+		}
+		#input p{
+			color: white;
+			font-family: sans-serif;
+			margin: 10px;
+		}
+		#username
+		{
+			margin: 5px;
+			height: 35px;
+			width: 330px;
+			border: none;
+			color: white;
+			outline: none;
+			padding-left: 10px;
+			background-color: rgba(86, 86, 86, 0.3);
+			backdrop-filter: blur(15px);
+			font-size: 15px;
+			box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+			
+			
+		}
+
+		#password
+		{
+			margin: 5px;
+			height: 35px;
+			width: 330px;
+			border: none;
+			color: white;
+			outline: none;
+			padding-left: 10px;
+			background-color: rgba(86, 86, 86, 0.3);
+			backdrop-filter: blur(15px);
+			box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+			
+
+		}
+		#input
+		{
+			margin: 15px;
+		}
+		#sign
+		{
+			margin-left: 85px;
+			height: 40px;
+			width: 200px;
+			border: none;
+			background-color: #4787ed;
+			color: white;
+			border-radius: 2px;
+			font-size: 15px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		#sign
+{
+  box-shadow: 0 0 1px #ccc;
+  transition: box-shadow 0.3s ease;
+}
+#sign:hover, #sign:focus, #sign:active 
+{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+#forgot-password
+{
+	margin-left: 110px;
+	margin-top: 30px;
+}
+#forgot-password a
+
+{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+#forgot-password a:hover
+{
+	color:#4787ed ;
+	opacity: 0.9;
+}
+#st{
+	margin-left: -70px;
+	font-size: 27px;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="menu-bar">
+	
+	<i class="fa fa-steam" style="font-size:50px;color: black;background-color: #b5bcc7;"></i>
+    
+<ul>
+	<li><a id="st" href="#">STEAM</a></li>
+	<li><a href="#">STORE</a>
+    <div class="sub-menu-1">
+    	<ul>
+    	<li><a href="#">HOME</a></li>
+    	<li><a href="#">DISCOVERY QUEUE</a></li>
+    	<li><a href="#">WISHLIST</a></li>
+    	<li><a href="#">POINTS SHOP</a></li>
+    	<li><a href="#">NEWS</a></li>
+    	<li><a href="#">STATS</a></li>
+    	</ul>
+
+    </div>
+	</li>
+	<li><a href="#">COMMUNITY</a>
+    <div class="sub-menu-1">
+    	<ul>
+    		<li><a href="#">HOME</a></li>
+    		<li><a href="#">DISCUSSIONS</a></li>
+    		<li><a href="#">WORKSHOP</a></li>
+    		<li><a href="#">MARKET</a></li>
+    		<li><a href="#">BROADCASTS</a></li>
+
+    	</ul>
+    </div>
+	</li>
+	<li><a href="#">ABOUT</a>
+    <div class="sub-menu-1">
+    	<ul>
+    		<li><a href="#">Designing</a></li>
+    		<li><a href="#">Marketing</a></li>
+    		<li><a href="#">Start up</a></li>
+    	</ul>
+    </div>
+
+	</li>
+	<li><a href="#">SUPPORT</a></li>
+	
+</ul>
+</div>
+<div id="form">
+	<div id="title">
+	 <p>SIGN IN</p>
+	</div>
+    <div id="input">
+    	<p>Steam account name</p>
+    	<input type="text" id="username" autocomplete="off">
+        <p>Password</p>
+        <input type="password" id="password" autocomplete="off">
+    </div>
+    <button id="sign">Sign in</button>
+    <div id="forgot-password">
+    	<p><a href="#">Forgot your password?</a></p>
+    </div>
+</div>
+</body>
+</html>
